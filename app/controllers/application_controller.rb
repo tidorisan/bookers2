@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   		devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   	end
 
-	# ログインしていないと どの画面も表示されない　ログイン画面へのリダイレクト
-	before_action :authenticate_user!
+	# ログインしていないと どの画面も表示されない　ログイン画面へのリダイレクト 今はいらない
+
+	# before_action :authenticate_user!
 end
